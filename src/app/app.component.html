@@ -1,0 +1,12 @@
+<form (submit)="addEmployee()">
+  <label>Name: </label>
+  <input [(ngModel)]="name" name="name" required />
+
+  <label>ID: </label>
+  <input [(ngModel)]="id" name="id" required />
+
+  <label>Upload Image: </label>
+  <input type="file" (change)="handleFileInput($event)" />
+
+  <button type="submit">Add Employee</button>
+</form>
